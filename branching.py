@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 import turtle as t
  
 def y(length=100):
