@@ -2,7 +2,7 @@
 
 import turtle as t
  
-def y(length=100):
+def branch(length=100):
     """ 
     paints a branch of a tree with 2 smaller branches, like an Y
     """
@@ -14,15 +14,15 @@ def y(length=100):
     # rotate left for smaller "fork" branch
     t.left(30)          
     # create a smaller branch with 2/3 the lenght of the parent branch
-    y(length * 0.6)     
-    # rotoate right for smaller "fork" branch 
+    branch(length * 0.6)     
+    # rotate right for smaller "fork" branch 
     t.right(60)         
-    # create second smaller branch
-    y(length * 0.6)     
+    # create second smaller aranch
+    branch(length * 0.6)     
     # rotate back to original heading 
     t.left(30)          
     t.fd(-length)       
     return              
  
 # calling the function the first time
-y(200) # create a tree, the first branch has a length of 200 pixel
+branch(250) # create a tree, the first branch has a length of 200 pixel
